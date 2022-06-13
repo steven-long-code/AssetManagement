@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>false</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <compiler_build/>
+        <copied_from/>
+        <copied_from_name/>
+        <description>Updates SAP with Received Item Data</description>
+        <internal_name>update_sap</internal_name>
+        <label_cache>[]</label_cache>
+        <latest_snapshot/>
+        <master_snapshot/>
+        <name>Update SAP</name>
+        <natlang/>
+        <outputs/>
+        <remote_trigger_id/>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>draft</status>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-08 16:57:24</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>d70811d01b4011107a3dff37dc4bcb0c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Update SAP</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="enosix Asset Management Connection" source="x_773451_enosix_0">ec000f9b1be341107a3dff37dc4bcb2c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="enosix Asset Management Connection">ec000f9b1be341107a3dff37dc4bcb2c</sys_scope>
+        <sys_update_name>sys_hub_flow_d70811d01b4011107a3dff37dc4bcb0c</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-08 16:57:24</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=d70811d01b4011107a3dff37dc4bcb0c"/>
+    <sys_variable_value action="delete_multiple" query="document_key=d70811d01b4011107a3dff37dc4bcb0c"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=d70811d01b4011107a3dff37dc4bcb0c"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=d70811d01b4011107a3dff37dc4bcb0c"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=d70811d01b4011107a3dff37dc4bcb0c^sys_idNOT IN9b0811d01b4011107a3dff37dc4bcb0e"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>d70811d01b4011107a3dff37dc4bcb0c</id>
+        <name>Update SAP</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-08 16:57:24</sys_created_on>
+        <sys_id>9b0811d01b4011107a3dff37dc4bcb0e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-08 16:57:24</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=9b0811d01b4011107a3dff37dc4bcb0e"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=d70811d01b4011107a3dff37dc4bcb0c"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=d70811d01b4011107a3dff37dc4bcb0c"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=d70811d01b4011107a3dff37dc4bcb0c"/>
+    <sys_hub_action_instance action="delete_multiple" query="flow=d70811d01b4011107a3dff37dc4bcb0c"/>
+    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=d70811d01b4011107a3dff37dc4bcb0c"/>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=d70811d01b4011107a3dff37dc4bcb0c"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=d70811d01b4011107a3dff37dc4bcb0c"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=d70811d01b4011107a3dff37dc4bcb0c"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_d70811d01b4011107a3dff37dc4bcb0c"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_d70811d01b4011107a3dff37dc4bcb0c"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_d70811d01b4011107a3dff37dc4bcb0c"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_d70811d01b4011107a3dff37dc4bcb0c"/>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=d70811d01b4011107a3dff37dc4bcb0c"/>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=d70811d01b4011107a3dff37dc4bcb0c"/>
+</record_update>

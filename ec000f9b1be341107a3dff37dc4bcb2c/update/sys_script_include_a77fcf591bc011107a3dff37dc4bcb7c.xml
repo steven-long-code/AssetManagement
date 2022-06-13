@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_773451_enosix_0.AMenosixAssetManagementImportController</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description>Primary class to facilitate the import of enosix Purchase Order and loading Purchase Order into staging tables</description>
+        <name>AMenosixAssetManagementImportController</name>
+        <script><![CDATA[var AMenosixAssetManagementImportController = Class.create();
+AMenosixAssetManagementImportController.prototype = {
+    initialize: function() {},
+
+    beginImport: function(import_set_table, aliasId, connectionName, maxRow) {
+        this._getpurchaseorder(import_set_table, aliasId, connectionName, maxRow);
+    },
+
+
+    //Internal Functions
+
+    _getpurchaseorder: function(import_set_table, aliasId, connectionName, maxRow) {
+        //Example function on how to call to a DataStream action via a script
+        //var apiTimeout = gs.getProperty('x_enosi_cmdb.api_max_timeout');
+		var apiTimeout = 30000;
+        if (apiTimeout) {
+            apiTimeout = parseInt(apiTimeout);
+        } else {
+            apiTimeout = 30000;
+        }
+        var flattener = new AMenosixpurchaseorderFlattener();
+        var inputs = {
+            alias_id: aliasId,
+            max_row: maxRow,
+            connection_name: connectionName,
+        };
+        var stream = sn_fd.FlowAPI.executeDataStreamAction('x_773451_enosix_0.get_enosix_purchaseorder', inputs, apiTimeout);
+        while (stream.hasNext()) {
+            try {
+                var record = stream.next();
+                if (record.item) {
+                    var item = JSON.parse(record.item);
+                    //Possibly Flatten data into table structure fist
+                    var flattenedItem = flattener.getpurchaseorder(item, connectionName);
+                    flattenedItem = this._runExtensionPoint(flattenedItem, item);
+                    if (flattenedItem) {
+                        import_set_table.insert({
+                            data: JSON.stringify(flattenedItem)
+                        });
+                    }
+                }
+            } catch (e) {
+                gs.error('AM-Enosix AMenosixAssetManagementImportController(_getpurchaseorder): ' + JSON.stringify(e));
+            }
+
+        }
+    },
+
+    _runExtensionPoint: function(flattenedItem, apiItem) {
+        var eps = new GlideScriptedExtensionPoint().getExtensions("AMEnosixpurchaseorderExtension");
+        for (var i = 0; i < eps.length; i++) {
+            try {
+                var ep = eps[i];
+                flattenedItem = ep.process(flattenedItem, apiItem);
+            } catch (e) {
+                gs.error('AM-Enosix AMenosixAssetManagementImportController(_runExtensionPoint): ' + JSON.stringify(e));
+            }
+        }
+        return flattenedItem;
+    },
+
+    type: 'AMenosixAssetManagementImportController'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-12 04:20:16</sys_created_on>
+        <sys_id>a77fcf591bc011107a3dff37dc4bcb7c</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>AMenosixAssetManagementImportController</sys_name>
+        <sys_package display_value="enosix Asset Management Connection" source="x_773451_enosix_0">ec000f9b1be341107a3dff37dc4bcb2c</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="enosix Asset Management Connection">ec000f9b1be341107a3dff37dc4bcb2c</sys_scope>
+        <sys_update_name>sys_script_include_a77fcf591bc011107a3dff37dc4bcb7c</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-13 02:54:08</sys_updated_on>
+    </sys_script_include>
+</record_update>

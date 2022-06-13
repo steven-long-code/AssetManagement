@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_complex_object">
+    <sys_complex_object action="INSERT_OR_UPDATE">
+        <label/>
+        <name>FD0c82a3e1bec05110fa2e1e21b7496fcf</name>
+        <namespace>FlowDesigner</namespace>
+        <scope_name>ec000f9b1be341107a3dff37dc4bcb2c</scope_name>
+        <serialized_content>{"FlowDesigner:FD0c82a3e1bec05110fa2e1e21b7496fcf":{"item":"String","item.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"item\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\"}"}},"FlowDesigner:FD0c82a3e1bec05110fa2e1e21b7496fcf.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"\",\"default_value\":\"\",\"label\":\"targetObject\",\"mandatory\":\"false\",\"uiUniqueId\":\"f60edd6c-383b-4398-9529-5dff6c780934\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FD0c82a3e1bec05110fa2e1e21b7496fcf\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceUiUniqueId\":\"\",\"sourceType\":\"\",\"hint\":null,\"uiType\":\"object\",\"order\":\"12\",\"max_length\":\"65000\"}"}}</serialized_content>
+        <sys_class_name>sys_complex_object</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-13 00:14:42</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>cc82a3e11bc051107a3dff37dc4bcbcf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>FD0c82a3e1bec05110fa2e1e21b7496fcf</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="enosix Asset Management Connection" source="x_773451_enosix_0">ec000f9b1be341107a3dff37dc4bcb2c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="enosix Asset Management Connection">ec000f9b1be341107a3dff37dc4bcb2c</sys_scope>
+        <sys_update_name>sys_complex_object_cc82a3e11bc051107a3dff37dc4bcbcf</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-13 00:14:42</sys_updated_on>
+        <type>complex_object_schema</type>
+    </sys_complex_object>
+</record_update>
