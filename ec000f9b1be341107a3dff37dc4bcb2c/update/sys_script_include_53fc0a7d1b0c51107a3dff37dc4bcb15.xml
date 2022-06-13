@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_773451_enosix_0.AMenosixPurchaseOrderFlattener</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description>Called from the AMenosixPurchaseOrderImportController and will scan over a single enosix device to help flatten and reorganize the data into a more consumable formate for the IH-ETL</description>
+        <name>AMenosixPurchaseOrderFlattener</name>
+        <script><![CDATA[var SGEnosixFunctionalLocationFlattener = Class.create();
+SGEnosixFunctionalLocationFlattener.prototype = {
+    initialize: function() {},
+
+    getFunctionalLocation: function(functionalLocation, connectionName) {
+        //Flatten the device if needed to simplify the data structure as much as possible
+        var obj = {};
+        obj.deletionFlag = functionalLocation.deletionFlag;
+        obj.functionalLocation = functionalLocation.functionalLocation || '';
+        obj.depth = functionalLocation.depth || '';
+        if (obj.depth) {
+            obj.depth = obj.depth.trim();
+        }
+        obj.status = functionalLocation.status || '';
+        obj.maintenancePlant = functionalLocation.maintenancePlant || '';
+        obj.maintenancePlantDescription = functionalLocation.maintenancePlantDescription || '';
+        obj.companyCode = functionalLocation.companyCode || '';
+        obj.companyCodeDescription = functionalLocation.companyCodeDescription || '';
+        obj.equipmentInstallationAllowed = functionalLocation.equiptmentInstallationAllowed || '';
+        obj.controllingArea = functionalLocation.controllingArea || '';
+        obj.wbsElement = functionalLocation.wbsElement || '';
+        obj.functionalLocationIndicator = functionalLocation.functionalLocationIndicator || '';
+        obj.functionalLocationDescription = functionalLocation.functionaLocationDescription || '';
+        obj.businessArea = functionalLocation.businessArea || '';
+        obj.businessAreaDescription = functionalLocation.businessAreaDescription || '';
+        obj.assetNumber = functionalLocation.assetNumber || '';
+        obj.assetSubNumber = functionalLocation.assetSubNumber || '';
+        obj.costCenter = functionalLocation.costCenter || '';
+        obj.superiorFunctionalLocation = functionalLocation.superiorFunctionalLocation || '';
+        obj.position = functionalLocation.position || '';
+        obj.room = functionalLocation.room || '';
+        obj.location = functionalLocation.location || '';
+        obj.technicalObjectABCindicator = functionalLocation.technicalObjectABCindicator || '';
+        obj.x_connectionName = connectionName;
+        obj.x_location_levels = JSON.stringify(this._getLocationLevels(functionalLocation));
+        return obj;
+    },
+
+
+    //Internal Functions
+
+    _getLocationLevels: function(functionalLocation) {
+        var pref = 'level';
+        var levels = [];
+        for (var i = 1; i <= 16; i++) {
+            if (functionalLocation[pref + i]) {
+                levels.push(functionalLocation[pref + i]);
+            } else {
+                break;
+            }
+        }
+        return levels;
+    },
+
+    type: 'SGEnosixFunctionalLocationFlattener'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-13 12:41:38</sys_created_on>
+        <sys_id>53fc0a7d1b0c51107a3dff37dc4bcb15</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>AMenosixPurchaseOrderFlattener</sys_name>
+        <sys_package display_value="enosix Asset Management Connection" source="x_773451_enosix_0">ec000f9b1be341107a3dff37dc4bcb2c</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="enosix Asset Management Connection">ec000f9b1be341107a3dff37dc4bcb2c</sys_scope>
+        <sys_update_name>sys_script_include_53fc0a7d1b0c51107a3dff37dc4bcb15</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-13 12:41:38</sys_updated_on>
+    </sys_script_include>
+</record_update>

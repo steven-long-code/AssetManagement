@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_773451_enosix_0.AMenosixSettings</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description>Utility class used to help with easily accessing and setting integration settings.</description>
+        <name>AMenosixSettings</name>
+        <script><![CDATA[var AMenosixSettings = Class.create();
+AMenosixSettings.prototype = {
+    initialize: function() {
+    },
+	
+	checkIfImportRunning: function(jobSysId) {
+        var running = false;
+		if(!jobSysId){
+			return;
+		}
+        var sysTriggerGa = new GlideAggregate('sys_trigger');
+        sysTriggerGa.addQuery('state', '!=', '0');
+        sysTriggerGa.addQuery('document_key', jobSysId);
+        sysTriggerGa.addAggregate('COUNT');
+        sysTriggerGa.query();
+        if (sysTriggerGa.next()) {
+            var count = sysTriggerGa.getAggregate('COUNT');
+            gs.debug("AM-enosix: Total Jobs Currently Running: " + count);
+            if (count > 1) {
+                running = true;
+            }
+        }
+        return running;
+    },
+	
+	getSearchLocationCategory: function(){
+        return gs.getProperty('x_773451_enosix_0.search_param_location_category');
+    },
+
+    getSearchLocationIndicator: function(){
+        return gs.getProperty('x_773451_enosix_0.search_param_location_indicator');
+    },
+
+
+    setDateFromImportTimeTemp: function(connectionName){
+		var lastImportTimeTemp = gs.getProperty('x_773451_enosix_0.date_from_time_temp');
+		if(!lastImportTimeTemp){
+			lastImportTimeTemp = {};
+		}else{
+			lastImportTimeTemp = JSON.parse(lastImportTimeTemp);
+		}
+		lastImportTimeTemp[connectionName] = new GlideDateTime().toString();
+		gs.setProperty('x_773451_enosix_0.date_from_time_temp', JSON.stringify(lastImportTimeTemp));
+	},
+
+	setDateFromImportTime: function(connectionName){
+		var dateFromTemp  = gs.getProperty('x_773451_enosix_0.date_from_time_temp');
+		if(!dateFromTemp){
+			dateFromTemp = {};
+		}else{
+			dateFromTemp = JSON.parse(dateFromTemp);
+		}
+		var dateFrom  = gs.getProperty('x_773451_enosix_0.date_from_time');
+		if(!dateFrom){
+			dateFrom = {};
+		}else{
+			dateFrom = JSON.parse(dateFrom);
+		}
+		if(dateFromTemp[connectionName]){
+			dateFrom[connectionName] = dateFromTemp[connectionName];
+		}
+		gs.setProperty('x_773451_enosix_0.date_from_time', JSON.stringify(dateFrom));
+	},
+	
+	resetLastImportTime: function(connectionName){
+		var dateFromTemp  = gs.getProperty('x_773451_enosix_0.date_from_time_temp');
+		if(!dateFromTemp){
+			dateFromTemp = {};
+		}else{
+			dateFromTemp = JSON.parse(dateFromTemp);
+		}
+		if(dateFromTemp[connectionName]){
+			dateFromTemp[connectionName] = '';
+		}
+		gs.setProperty('x_773451_enosix_0.date_from_time_temp', JSON.stringify(dateFromTemp));
+
+		var dateFrom  = gs.getProperty('x_773451_enosix_0.date_from_time');
+		if(!dateFrom){
+			dateFrom = {};
+		}else{
+			dateFrom = JSON.parse(dateFrom);
+		}
+		if(dateFrom[connectionName]){
+			dateFrom[connectionName] = '';
+		}
+		gs.setProperty('x_773451_enosix_0.date_from_time', JSON.stringify(dateFrom));
+	},
+	
+    getDateFromTime: function(connectionName){
+		var dateFromTime = gs.getProperty('x_773451_enosix_0.date_from_time');
+		if(!dateFromTime){
+			dateFromTime = {};
+		}else{
+			dateFromTime = JSON.parse(dateFromTime);
+		}
+		if(!dateFromTime[connectionName]){
+			return '';
+		}else{
+			dateFromTime[connectionName] = new GlideDateTime(dateFromTime[connectionName]);
+		}
+		var formattedLastSeenTime = this._formatGDT(dateFromTime[connectionName]);
+		return formattedLastSeenTime;
+	},
+
+
+    //Internal Functions
+
+    _formatGDT:function(timeGdt){
+		if(timeGdt){
+			var timeRange = timeGdt.toString();
+			//Format Time String
+			var timeRangeSplit = timeRange.split(' ');
+			timeRange = timeRangeSplit[0] + 'T' + timeRangeSplit[1] + '.000Z';
+			return timeRange;
+		}
+	},
+
+    type: 'AMenosixSettings'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-12 04:44:20</sys_created_on>
+        <sys_id>89b597dd1bc011107a3dff37dc4bcb1d</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>AMenosixSettings</sys_name>
+        <sys_package display_value="enosix Asset Management Connection" source="x_773451_enosix_0">ec000f9b1be341107a3dff37dc4bcb2c</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="enosix Asset Management Connection">ec000f9b1be341107a3dff37dc4bcb2c</sys_scope>
+        <sys_update_name>sys_script_include_89b597dd1bc011107a3dff37dc4bcb1d</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-13 01:16:28</sys_updated_on>
+    </sys_script_include>
+</record_update>

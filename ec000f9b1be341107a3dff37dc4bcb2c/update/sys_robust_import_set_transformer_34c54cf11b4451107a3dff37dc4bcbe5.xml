@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_robust_import_set_transformer">
+    <sys_robust_import_set_transformer action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <batch_size>100</batch_size>
+        <description>Imports SAP Data using REST Integration</description>
+        <name>enosix Asset Management Connector</name>
+        <properties/>
+        <robust_transform_engine display_value="enosix Asset Management Connector">f4c54cf11b4451107a3dff37dc4bcbe2</robust_transform_engine>
+        <source_table>x_773451_enosix_0_x_enosix_purchase_order</source_table>
+        <sys_class_name>sys_robust_import_set_transformer</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-13 02:48:45</sys_created_on>
+        <sys_id>34c54cf11b4451107a3dff37dc4bcbe5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>enosix Asset Management Connector</sys_name>
+        <sys_package display_value="enosix Asset Management Connection" source="x_773451_enosix_0">ec000f9b1be341107a3dff37dc4bcb2c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="enosix Asset Management Connection">ec000f9b1be341107a3dff37dc4bcb2c</sys_scope>
+        <sys_update_name>sys_robust_import_set_transformer_34c54cf11b4451107a3dff37dc4bcbe5</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-13 02:48:45</sys_updated_on>
+        <verbose>false</verbose>
+    </sys_robust_import_set_transformer>
+</record_update>
