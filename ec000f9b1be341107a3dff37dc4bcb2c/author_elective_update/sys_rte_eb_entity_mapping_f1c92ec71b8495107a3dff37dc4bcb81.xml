@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rte_eb_entity_mapping">
+    <sys_rte_eb_entity_mapping action="DELETE">
+        <condition_script><![CDATA[/*  Example Script  (function() {          //step1: access the input variables         if (input && input.temp.u_type == 'Disk') {         //step2: return true/false             return true;         }         return false;  })(); */  (function(input) {     // Add your code here. })(input);]]></condition_script>
+        <encoded_query/>
+        <entity_mapping_group>71c92ec71b8495107a3dff37dc4bcb7f</entity_mapping_group>
+        <ignore>true</ignore>
+        <is_conditional>false</is_conditional>
+        <name>tempToOT Asset 1</name>
+        <order>100</order>
+        <source_sys_rte_eb_entity display_value="temp">2759eac71b8495107a3dff37dc4bcb7d</source_sys_rte_eb_entity>
+        <sys_class_name>sys_rte_eb_entity_mapping</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-17 11:57:46</sys_created_on>
+        <sys_id>f1c92ec71b8495107a3dff37dc4bcb81</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>tempToOT Asset 1</sys_name>
+        <sys_package display_value="enosix Asset Management Connection" source="x_773451_enosix_0">ec000f9b1be341107a3dff37dc4bcb2c</sys_package>
+        <sys_policy/>
+        <sys_rte_eb_definition display_value="enosix Asset Management Connector">ba59ea871b8495107a3dff37dc4bcbd9</sys_rte_eb_definition>
+        <sys_scope display_value="enosix Asset Management Connection">ec000f9b1be341107a3dff37dc4bcb2c</sys_scope>
+        <sys_update_name>sys_rte_eb_entity_mapping_f1c92ec71b8495107a3dff37dc4bcb81</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-17 11:57:46</sys_updated_on>
+        <target_sys_rte_eb_entity display_value="OT Asset 1">35c92ec71b8495107a3dff37dc4bcb7f</target_sys_rte_eb_entity>
+    </sys_rte_eb_entity_mapping>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="enosix Asset Management Connection">ec000f9b1be341107a3dff37dc4bcb2c</application>
+        <file_path/>
+        <instance_id>b775902edb65bb4491232f17d49619ab</instance_id>
+        <instance_name>dev86563</instance_name>
+        <name>sys_rte_eb_entity_mapping_f1c92ec71b8495107a3dff37dc4bcb81</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_rte_eb_entity_mapping"&gt;&lt;sys_rte_eb_entity_mapping action="INSERT_OR_UPDATE"&gt;&lt;condition_script&gt;&lt;![CDATA[/*  Example Script  (function() {          //step1: access the input variables         if (input &amp;&amp; input.temp.u_type == 'Disk') {         //step2: return true/false             return true;         }         return false;  })(); */  (function(input) {     // Add your code here. })(input);]]&gt;&lt;/condition_script&gt;&lt;encoded_query/&gt;&lt;entity_mapping_group&gt;71c92ec71b8495107a3dff37dc4bcb7f&lt;/entity_mapping_group&gt;&lt;ignore&gt;true&lt;/ignore&gt;&lt;is_conditional&gt;false&lt;/is_conditional&gt;&lt;name&gt;tempToOT Asset 1&lt;/name&gt;&lt;order&gt;100&lt;/order&gt;&lt;source_sys_rte_eb_entity display_value="temp"&gt;2759eac71b8495107a3dff37dc4bcb7d&lt;/source_sys_rte_eb_entity&gt;&lt;sys_class_name&gt;sys_rte_eb_entity_mapping&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-06-17 11:57:46&lt;/sys_created_on&gt;&lt;sys_id&gt;f1c92ec71b8495107a3dff37dc4bcb81&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;tempToOT Asset 1&lt;/sys_name&gt;&lt;sys_package display_value="enosix Asset Management Connection" source="x_773451_enosix_0"&gt;ec000f9b1be341107a3dff37dc4bcb2c&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_rte_eb_definition display_value="enosix Asset Management Connector"&gt;ba59ea871b8495107a3dff37dc4bcbd9&lt;/sys_rte_eb_definition&gt;&lt;sys_scope display_value="enosix Asset Management Connection"&gt;ec000f9b1be341107a3dff37dc4bcb2c&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_rte_eb_entity_mapping_f1c92ec71b8495107a3dff37dc4bcb81&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-06-17 11:57:46&lt;/sys_updated_on&gt;&lt;target_sys_rte_eb_entity display_value="OT Asset 1"&gt;35c92ec71b8495107a3dff37dc4bcb7f&lt;/target_sys_rte_eb_entity&gt;&lt;/sys_rte_eb_entity_mapping&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>1109416944</payload_hash>
+        <record_name>tempToOT Asset 1</record_name>
+        <reverted_from/>
+        <source>bec252fd1b0c51107a3dff37dc4bcb0b</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-17 11:57:46</sys_created_on>
+        <sys_id>3dc92ec71b8495107a3dff37dc4bcb82</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1817186c4ac0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-17 11:57:46</sys_updated_on>
+        <type>RTE Entity Mapping</type>
+        <update_guid>75c92ec7b7849510cdadf5c921f91382</update_guid>
+        <update_guid_history>75c92ec7b7849510cdadf5c921f91382:1109416944</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-29 13:07:23</sys_created_on>
+        <sys_db_object display_value="" name="sys_rte_eb_entity_mapping">sys_rte_eb_entity_mapping</sys_db_object>
+        <sys_id>5924d01b84964000b06b36a227b112f1</sys_id>
+        <sys_metadata>f1c92ec71b8495107a3dff37dc4bcb81</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>tempToOT Asset 1</sys_name>
+        <sys_package display_value="enosix Asset Management Connection" source="x_773451_enosix_0">ec000f9b1be341107a3dff37dc4bcb2c</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="enosix Asset Management Connection">ec000f9b1be341107a3dff37dc4bcb2c</sys_scope>
+        <sys_scope_delete display_value="">654ec180a4f84ce69b9b23461da12111</sys_scope_delete>
+        <sys_update_name>sys_rte_eb_entity_mapping_f1c92ec71b8495107a3dff37dc4bcb81</sys_update_name>
+        <sys_update_version display_value="sys_rte_eb_entity_mapping_f1c92ec71b8495107a3dff37dc4bcb81">3dc92ec71b8495107a3dff37dc4bcb82</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-29 13:07:23</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

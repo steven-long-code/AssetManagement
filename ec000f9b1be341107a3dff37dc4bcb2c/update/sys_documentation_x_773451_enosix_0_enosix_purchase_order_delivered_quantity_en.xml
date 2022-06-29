@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="delivered_quantity" label="Delivered quantity" language="en" table="x_773451_enosix_0_enosix_purchase_order">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>delivered_quantity</element>
+            <help/>
+            <hint/>
+            <label>Delivered quantity</label>
+            <language>en</language>
+            <name>x_773451_enosix_0_enosix_purchase_order</name>
+            <plural>Delivered quantities</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-06-29 00:39:56</sys_created_on>
+            <sys_id>a5b18afa1bd851107a3dff37dc4bcb93</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Delivered quantity</sys_name>
+            <sys_package display_value="enosix Asset Management Connection" source="x_773451_enosix_0">ec000f9b1be341107a3dff37dc4bcb2c</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="enosix Asset Management Connection">ec000f9b1be341107a3dff37dc4bcb2c</sys_scope>
+            <sys_update_name>sys_documentation_x_773451_enosix_0_enosix_purchase_order_delivered_quantity_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-06-29 00:39:56</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rte_eb_field">
+    <sys_rte_eb_field action="DELETE">
+        <field>source_native_key</field>
+        <name>source_native_key</name>
+        <sys_class_name>sys_rte_eb_field</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-17 11:58:57</sys_created_on>
+        <sys_id>1f0aa60b1b8495107a3dff37dc4bcb7a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>source_native_key</sys_name>
+        <sys_package display_value="enosix Asset Management Connection" source="x_773451_enosix_0">ec000f9b1be341107a3dff37dc4bcb2c</sys_package>
+        <sys_policy/>
+        <sys_rte_eb_definition display_value="enosix Asset Management Connector">ba59ea871b8495107a3dff37dc4bcbd9</sys_rte_eb_definition>
+        <sys_rte_eb_entity display_value="OT Asset 1">35c92ec71b8495107a3dff37dc4bcb7f</sys_rte_eb_entity>
+        <sys_scope display_value="enosix Asset Management Connection">ec000f9b1be341107a3dff37dc4bcb2c</sys_scope>
+        <sys_update_name>sys_rte_eb_field_1f0aa60b1b8495107a3dff37dc4bcb7a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-17 11:58:57</sys_updated_on>
+    </sys_rte_eb_field>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="enosix Asset Management Connection">ec000f9b1be341107a3dff37dc4bcb2c</application>
+        <file_path/>
+        <instance_id>b775902edb65bb4491232f17d49619ab</instance_id>
+        <instance_name>dev86563</instance_name>
+        <name>sys_rte_eb_field_1f0aa60b1b8495107a3dff37dc4bcb7a</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rte_eb_field"><sys_rte_eb_field action="INSERT_OR_UPDATE"><field>source_native_key</field><name>source_native_key</name><sys_class_name>sys_rte_eb_field</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2022-06-17 11:58:57</sys_created_on><sys_id>1f0aa60b1b8495107a3dff37dc4bcb7a</sys_id><sys_mod_count>0</sys_mod_count><sys_name>source_native_key</sys_name><sys_package display_value="enosix Asset Management Connection" source="x_773451_enosix_0">ec000f9b1be341107a3dff37dc4bcb2c</sys_package><sys_policy/><sys_rte_eb_definition display_value="enosix Asset Management Connector">ba59ea871b8495107a3dff37dc4bcbd9</sys_rte_eb_definition><sys_rte_eb_entity display_value="OT Asset 1">35c92ec71b8495107a3dff37dc4bcb7f</sys_rte_eb_entity><sys_scope display_value="enosix Asset Management Connection">ec000f9b1be341107a3dff37dc4bcb2c</sys_scope><sys_update_name>sys_rte_eb_field_1f0aa60b1b8495107a3dff37dc4bcb7a</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2022-06-17 11:58:57</sys_updated_on></sys_rte_eb_field></record_update>]]></payload>
+        <payload_hash>-530143990</payload_hash>
+        <record_name>source_native_key</record_name>
+        <reverted_from/>
+        <source>bec252fd1b0c51107a3dff37dc4bcb0b</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-17 11:58:57</sys_created_on>
+        <sys_id>970aa60b1b8495107a3dff37dc4bcb7c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1817187da370000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-17 11:58:57</sys_updated_on>
+        <type>RTE Entity Field</type>
+        <update_guid>df0aa60bea849510536662fe6ac9dc7b</update_guid>
+        <update_guid_history>df0aa60bea849510536662fe6ac9dc7b:-530143990</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-29 13:07:23</sys_created_on>
+        <sys_db_object display_value="" name="sys_rte_eb_field">sys_rte_eb_field</sys_db_object>
+        <sys_id>1ad5919f5e1345a0a78ed3c233bbaf84</sys_id>
+        <sys_metadata>1f0aa60b1b8495107a3dff37dc4bcb7a</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>source_native_key</sys_name>
+        <sys_package display_value="enosix Asset Management Connection" source="x_773451_enosix_0">ec000f9b1be341107a3dff37dc4bcb2c</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="enosix Asset Management Connection">ec000f9b1be341107a3dff37dc4bcb2c</sys_scope>
+        <sys_scope_delete display_value="">654ec180a4f84ce69b9b23461da12111</sys_scope_delete>
+        <sys_update_name>sys_rte_eb_field_1f0aa60b1b8495107a3dff37dc4bcb7a</sys_update_name>
+        <sys_update_version display_value="sys_rte_eb_field_1f0aa60b1b8495107a3dff37dc4bcb7a">970aa60b1b8495107a3dff37dc4bcb7c</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-29 13:07:23</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

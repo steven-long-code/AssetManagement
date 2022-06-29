@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rte_eb_field">
+    <sys_rte_eb_field action="INSERT_OR_UPDATE">
+        <field>Ordered_Value</field>
+        <name>Ordered_Value</name>
+        <sys_class_name>sys_rte_eb_field</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-27 20:15:34</sys_created_on>
+        <sys_id>979bfb5e1b5411107a3dff37dc4bcbb6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Ordered_Value</sys_name>
+        <sys_package display_value="enosix Asset Management Connection" source="x_773451_enosix_0">ec000f9b1be341107a3dff37dc4bcb2c</sys_package>
+        <sys_policy/>
+        <sys_rte_eb_definition display_value="enosix Asset Management Connector">ba59ea871b8495107a3dff37dc4bcbd9</sys_rte_eb_definition>
+        <sys_rte_eb_entity display_value="temp">2759eac71b8495107a3dff37dc4bcb7d</sys_rte_eb_entity>
+        <sys_scope display_value="enosix Asset Management Connection">ec000f9b1be341107a3dff37dc4bcb2c</sys_scope>
+        <sys_update_name>sys_rte_eb_field_979bfb5e1b5411107a3dff37dc4bcbb6</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-27 20:15:34</sys_updated_on>
+    </sys_rte_eb_field>
+</record_update>

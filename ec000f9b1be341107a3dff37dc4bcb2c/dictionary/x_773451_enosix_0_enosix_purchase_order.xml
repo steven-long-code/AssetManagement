@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element extends="cmdb_ci" label="enosix Purchase Order" max_length="40" name="x_773451_enosix_0_enosix_purchase_order" sizeclass="0" type="collection">
+        <element default="0" label="Delivered quantity" max_length="40" name="delivered_quantity" type="integer"/>
+        <element label="Number" max_length="40" name="number" type="string"/>
+        <element default="1" label="Ordered quantity" max_length="40" name="ordered_quantity" type="integer"/>
+        <element display="true" label="Part number" max_length="40" name="part_number" type="string"/>
+        <element default="javascript:gs.nowDateTime()" dynamic_default_value="79cb83a85f220100a9ad2572f2b4773c" label="PO date" max_length="40" name="po_date" type="glide_date_time" use_dynamic_default="true"/>
+        <element label="Product Catalog" max_length="32" name="product_catalog" reference="sc_cat_item" type="reference"/>
+        <element label="Product Model" max_length="32" name="product_model" reference="cmdb_model" type="reference"/>
+        <element label="Ship to" max_length="32" name="ship_to" reference="alm_stockroom" type="reference"/>
+    </element>
+</database>
