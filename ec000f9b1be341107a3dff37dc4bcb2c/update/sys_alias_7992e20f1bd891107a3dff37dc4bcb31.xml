@@ -2,23 +2,23 @@
     <sys_alias action="INSERT_OR_UPDATE">
         <configuration_template display_value="POenosix">0eb9db911b0411107a3dff37dc4bcbfd</configuration_template>
         <connection_type>http_connection</connection_type>
-        <id>x_773451_enosix_0.enosix_Purchase_Order</id>
-        <multiple_connections>false</multiple_connections>
-        <name>enosix Purchase Order</name>
+        <id>x_773451_enosix_0.enosix_Asset_Management_Details</id>
+        <multiple_connections>true</multiple_connections>
+        <name>enosix Asset Management Details</name>
         <parent/>
         <retry_policy display_value="Default HTTP Retry Policy">ef751ff07301330025d71afe2ff6a7f9</retry_policy>
         <sys_class_name>sys_alias</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2022-06-12 04:49:00</sys_created_on>
-        <sys_id>14b7df511b0411107a3dff37dc4bcb12</sys_id>
-        <sys_mod_count>1</sys_mod_count>
-        <sys_name>x_773451_enosix_0.enosix_Purchase_Order</sys_name>
+        <sys_created_on>2022-06-29 21:43:58</sys_created_on>
+        <sys_id>7992e20f1bd891107a3dff37dc4bcb31</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_773451_enosix_0.enosix_Asset_Management_Details</sys_name>
         <sys_package display_value="enosix Asset Management Connection" source="x_773451_enosix_0">ec000f9b1be341107a3dff37dc4bcb2c</sys_package>
         <sys_policy/>
         <sys_scope display_value="enosix Asset Management Connection">ec000f9b1be341107a3dff37dc4bcb2c</sys_scope>
-        <sys_update_name>sys_alias_14b7df511b0411107a3dff37dc4bcb12</sys_update_name>
+        <sys_update_name>sys_alias_7992e20f1bd891107a3dff37dc4bcb31</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-06-12 05:01:31</sys_updated_on>
+        <sys_updated_on>2022-06-29 21:43:58</sys_updated_on>
         <type>connection</type>
     </sys_alias>
 </record_update>

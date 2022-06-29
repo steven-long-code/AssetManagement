@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="cmdb_inst_entity">
+    <cmdb_inst_entity action="DELETE">
+        <child_id_field/>
+        <lookup_for_entity/>
+        <name>Configuration Item 1</name>
+        <parent_entity/>
+        <parent_id_field/>
+        <path>cmdb_ci_1</path>
+        <related_for_entity/>
+        <relationship_type/>
+        <sys_class_name>cmdb_inst_entity</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-27 20:45:55</sys_created_on>
+        <sys_id>3b820ca21b9411107a3dff37dc4bcbfe</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Configuration Item 1</sys_name>
+        <sys_package display_value="enosix Asset Management Connection" source="x_773451_enosix_0">ec000f9b1be341107a3dff37dc4bcb2c</sys_package>
+        <sys_policy/>
+        <sys_rte_eb_definition display_value="enosix Asset Management Connector">ba59ea871b8495107a3dff37dc4bcbd9</sys_rte_eb_definition>
+        <sys_scope display_value="enosix Asset Management Connection">ec000f9b1be341107a3dff37dc4bcb2c</sys_scope>
+        <sys_update_name>cmdb_inst_entity_3b820ca21b9411107a3dff37dc4bcbfe</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-27 20:45:55</sys_updated_on>
+        <table>cmdb_ci</table>
+    </cmdb_inst_entity>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="enosix Asset Management Connection">ec000f9b1be341107a3dff37dc4bcb2c</application>
+        <file_path/>
+        <instance_id>b775902edb65bb4491232f17d49619ab</instance_id>
+        <instance_name>dev86563</instance_name>
+        <name>cmdb_inst_entity_3b820ca21b9411107a3dff37dc4bcbfe</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="cmdb_inst_entity"><cmdb_inst_entity action="INSERT_OR_UPDATE"><child_id_field/><lookup_for_entity/><name>Configuration Item 1</name><parent_entity/><parent_id_field/><path>cmdb_ci_1</path><related_for_entity/><relationship_type/><sys_class_name>cmdb_inst_entity</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2022-06-27 20:45:55</sys_created_on><sys_id>3b820ca21b9411107a3dff37dc4bcbfe</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Configuration Item 1</sys_name><sys_package display_value="enosix Asset Management Connection" source="x_773451_enosix_0">ec000f9b1be341107a3dff37dc4bcb2c</sys_package><sys_policy/><sys_rte_eb_definition display_value="enosix Asset Management Connector">ba59ea871b8495107a3dff37dc4bcbd9</sys_rte_eb_definition><sys_scope display_value="enosix Asset Management Connection">ec000f9b1be341107a3dff37dc4bcb2c</sys_scope><sys_update_name>cmdb_inst_entity_3b820ca21b9411107a3dff37dc4bcbfe</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2022-06-27 20:45:55</sys_updated_on><table>cmdb_ci</table></cmdb_inst_entity></record_update>]]></payload>
+        <payload_hash>467420821</payload_hash>
+        <record_name>Configuration Item 1</record_name>
+        <reverted_from/>
+        <source>bec252fd1b0c51107a3dff37dc4bcb0b</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-27 20:45:55</sys_created_on>
+        <sys_id>3f824ca21b9411107a3dff37dc4bcb00</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>181a6e9e53e0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-27 20:45:55</sys_updated_on>
+        <type>CMDB Integration Studio Entity</type>
+        <update_guid>77824ca2b0941110034da7be58fd3100</update_guid>
+        <update_guid_history>77824ca2b0941110034da7be58fd3100:467420821</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Configuration Item 1">b75340661b9411107a3dff37dc4bcb53</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-27 20:49:27</sys_created_on>
+        <sys_db_object display_value="" name="cmdb_inst_entity">cmdb_inst_entity</sys_db_object>
+        <sys_id>1eeb97cc9cde4d109cace6aed09604f9</sys_id>
+        <sys_metadata>3b820ca21b9411107a3dff37dc4bcbfe</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Configuration Item 1</sys_name>
+        <sys_package display_value="enosix Asset Management Connection" source="x_773451_enosix_0">ec000f9b1be341107a3dff37dc4bcb2c</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="enosix Asset Management Connection">ec000f9b1be341107a3dff37dc4bcb2c</sys_scope>
+        <sys_scope_delete display_value="">654ec180a4f84ce69b9b23461da12111</sys_scope_delete>
+        <sys_update_name>cmdb_inst_entity_3b820ca21b9411107a3dff37dc4bcbfe</sys_update_name>
+        <sys_update_version display_value="cmdb_inst_entity_3b820ca21b9411107a3dff37dc4bcbfe">3f824ca21b9411107a3dff37dc4bcb00</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-27 20:49:27</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
